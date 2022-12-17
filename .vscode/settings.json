@@ -1,6 +1,6 @@
 // .vscode/settings.json
 {
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": false
-    }
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": false
+	}
 }
