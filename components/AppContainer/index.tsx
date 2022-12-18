@@ -27,7 +27,7 @@ export default function AppLayout({
 
 	// Main JSX
 	return (
-		<div>
+		<>
 			<Head>
 				<title>{title}</title>
 				<meta name="robots" content="follow, index" />
@@ -44,11 +44,13 @@ export default function AppLayout({
 				<meta property="og:site_name" content="Mayur Upadhayay" />
 				<meta name="twitter:image" content={meta.image} />
 			</Head>
+
 			<main className="dark:bg-gray-800 w-full">
+				{/** Navbar */}
 				<Header />
 
 				{children}
 			</main>
-		</div>
+		</>
 	)
 }

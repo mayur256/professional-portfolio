@@ -4,8 +4,9 @@ import AppLayout from '../components/AppContainer'
 
 export default function Home() {
 	return (
-		<AppLayout title="Mayur Upadhayay - Developer" description="">
-			<h2>Developer Portfolio</h2>
-		</AppLayout>
+		<AppLayout
+			title="Mayur Upadhayay - Developer"
+			description=""
+		></AppLayout>
 	)
 }
