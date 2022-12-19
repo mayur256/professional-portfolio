@@ -9,7 +9,7 @@ import { Header } from '../Header'
 interface IProps {
 	title: string
 	description: string
-	children: ReactNode
+	children?: ReactNode
 }
 
 // Component definition
