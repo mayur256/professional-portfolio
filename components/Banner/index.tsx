@@ -48,7 +48,7 @@ export const Banner = (): ReactElement => {
 						alt="profile-mayur-upadhayay"
 						className="shadow"
 						height={200}
-						width={450}
+						width={400}
 					/>
 				</div>
 			</div>

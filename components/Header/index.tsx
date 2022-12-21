@@ -20,7 +20,7 @@ export const Header = (): ReactElement => {
 
 	// Main JSX
 	return (
-		<div className="p-4">
+		<header className="p-4">
 			<div className="flex md:flex-row justify-between items-center">
 				{/** Logo or header */}
 				<div className="flex flex-col">
@@ -84,7 +84,7 @@ export const Header = (): ReactElement => {
 					</button>
 				</div>
 			</div>
-		</div>
+		</header>
 		//Rest of the code
 	)
 }

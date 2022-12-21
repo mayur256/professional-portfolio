@@ -1,9 +1,10 @@
 import { ReactNode, ReactElement } from 'react'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+
+// layout Components
 import { Header } from '../Header'
-// import Navbar from "./Navbar";
-// import Footer from "./Footer";
+import { Footer } from '../Footer'
 
 // Props type definitions
 interface IProps {
@@ -45,12 +46,12 @@ export default function AppLayout({
 				<meta name="twitter:image" content={meta.image} />
 			</Head>
 
-			<main className="dark:bg-gray-800 w-full">
-				{/** Navbar */}
-				<Header />
+			{/** Navbar */}
+			<Header />
 
-				{children}
-			</main>
+			<main className="dark:bg-gray-800 w-full">{children}</main>
+
+			<Footer />
 		</>
 	)
 }
