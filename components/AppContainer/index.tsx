@@ -8,15 +8,15 @@ import { Footer } from '../Footer'
 
 // Props type definitions
 interface IProps {
-	title: string
-	description: string
+	title?: string
+	description?: string
 	children?: ReactNode
 }
 
 // Component definition
 export default function AppLayout({
-	title,
-	description,
+	title = 'Mayur',
+	description = '',
 	children,
 }: IProps): ReactElement {
 	const router = useRouter()
