@@ -14,7 +14,7 @@ export const Footer = (): ReactElement => {
 						Developed by
 						<div className="inline-block transform hover:scale-110 hover:-rotate-3 transition duration-300">
 							<a className="hover:bg-red-500 rounded-md px-2 py-1  hover:text-gray-50">
-								Mayur Upadhayay
+								Mayur Upadhayay &#8482;
 							</a>
 						</div>
 					</div>
