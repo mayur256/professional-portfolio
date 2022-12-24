@@ -9,6 +9,10 @@ export const Experience = (): ReactElement => {
 					Experience
 				</h1>
 			</div>
+
+			<div className="dark:bg-gray-900 -mt-4">
+				<div className="grid grid-cols-1 dark:bg-gray-900 max-w-xl mx-auto pt-20"></div>
+			</div>
 		</section>
 	)
 }
