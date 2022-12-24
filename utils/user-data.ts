@@ -40,3 +40,34 @@ export const experience = [
 			'Developed an ecommerce website tailored for specific customer segment of Sellers and Buyers.',
 	},
 ]
+
+export const projects = [
+	{
+		name: 'Doctodoor',
+		description:
+			'Comprehensive telemedicine solution to manage patients health, meanwhile leveraging telemedicine parity laws. Enables CMS remote patient monitoring management and reimbursement.',
+		image: '/doctodoor.png',
+		url: 'https://doctodoor.com/',
+	},
+	{
+		name: 'RxHelp Copay/HCPay',
+		description:
+			'RxHelp ePay is a program that allows you or your clinic to be reimbursed for services you have provided to patients on behalf of a pharmaceutical manufacturer.',
+		image: '/rxhelp.png',
+		url: 'https://rxhelpepay.innomar-strategies.com/',
+	},
+	{
+		name: 'EasyMail',
+		description:
+			'The system is a simplistic and universal interface to access emails.The goal of the system was to achieve accessibility such that it can be used by a diverse range of people. Users are authenticated to the system via Google’s OAuth2.',
+		image: '/easymail.png',
+		url: 'https://simplegmail.plenartech.com/',
+	},
+	{
+		name: 'Shopnet',
+		description: `The website allows users to navigate through a large catalog of products without distinguishing them on any access parameters.
+			However in order to make a purchase a user must register itself as a customer.User can still browse and search products based on category.`,
+		image: '/shopnet.png',
+		url: 'https://shopnet.heroku.com/',
+	},
+]
