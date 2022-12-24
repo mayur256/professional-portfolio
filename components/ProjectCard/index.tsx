@@ -9,17 +9,19 @@ interface IProps {
 	image: string
 	projectUrl: string
 }
+
 // Component definition
 export const ProjectCard = ({
 	name = '',
-	// description,
+	description,
 	image = '',
-}: // projectUrl
-Partial<IProps>): ReactElement => {
+	projectUrl = '',
+}: IProps): ReactElement => {
 	return (
-		<a className="w-full block shadow-2xl rounded">
-			<div className="relative overflow-hidden">
-				<div className="h-72 object-cover">
+		<div className="rounded-2xl shadow-2xl w-full">
+			<div className="relative overflow-hidden rounded-t">
+				{/** Bg image */}
+				<div className="object-cover h-64">
 					<Image
 						src={image}
 						alt={name}
@@ -28,6 +30,24 @@ Partial<IProps>): ReactElement => {
 					/>
 				</div>
 			</div>
-		</a>
+
+			{/** Hovering details */}
+			<div className="px-6 py-4 bottom-0 backdrop-blur-xl">
+				<div className="font-bold text-xl mb-2">
+					<a
+						href={projectUrl}
+						className="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+						target="_blank"
+						rel="noreferrer"
+					>
+						{name}
+						<span className="text-indigo-200" aria-hidden="true">
+							&rarr;
+						</span>
+					</a>
+				</div>
+				<p className="font-bold">{description}</p>
+			</div>
+		</div>
 	)
 }

@@ -26,6 +26,8 @@ export const Project = (): ReactElement => {
 								key={`${proj.name}-${idx}`}
 								name={proj.name}
 								image={proj.image}
+								description={proj.description}
+								projectUrl={proj.url}
 							/>
 						)
 					})}
