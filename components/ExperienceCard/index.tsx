@@ -4,10 +4,10 @@ import { ReactElement } from 'react'
 // Props type definitions
 interface IProps {
 	title: string
-	desc: string
+	description: string
 	year: string
 	company: string
-	companyLink: string
+	companyUrl: string
 	showDivider: boolean
 }
 
@@ -25,10 +25,10 @@ function Divider(): ReactElement {
 // Component definition
 export const ExperienceCard = ({
 	title,
-	desc,
+	description,
 	year,
 	company,
-	companyLink,
+	companyUrl,
 	showDivider,
 }: IProps): ReactElement => {
 	return (
@@ -38,10 +38,12 @@ export const ExperienceCard = ({
 					{year}
 				</h1>
 				<h1 className="font-semibold text-xl">{title}</h1>
-				<a href={companyLink} className="text-gray-500">
+				<a href={companyUrl} className="text-gray-500">
 					{company}
 				</a>
-				<p className="text-gray-600 dark:text-gray-400 my-2">{desc}</p>
+				<p className="text-gray-600 dark:text-gray-400 my-2">
+					{description}
+				</p>
 			</div>
 
 			{showDivider && <Divider />}

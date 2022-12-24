@@ -4,7 +4,7 @@ import { ReactElement } from 'react'
 // Component definition
 export const Footer = (): ReactElement => {
 	return (
-		<footer className="dark:bg-gray-900 fixed bottom-0 left-0 right-0 bg-lime-200">
+		<footer className="dark:bg-gray-900 bg-lime-200">
 			<div className="flex flex-col md:space-y-0 md:flex-row justify-between md:items-center p-4">
 				<div>
 					<p>&copy; Your Name. All Rights Reserved.</p>

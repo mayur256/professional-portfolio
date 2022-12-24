@@ -1,4 +1,11 @@
+// Top level imports
 import { ReactElement } from 'react'
+
+// Components
+import { ExperienceCard } from '../ExperienceCard'
+
+// Utils
+import { experience } from '@utils/user-data'
 
 // Main Component definition
 export const Experience = (): ReactElement => {
@@ -10,8 +17,25 @@ export const Experience = (): ReactElement => {
 				</h1>
 			</div>
 
-			<div className="dark:bg-gray-900 -mt-4">
-				<div className="grid grid-cols-1 dark:bg-gray-900 max-w-xl mx-auto pt-20"></div>
+			<div className="dark:bg-gray-900">
+				<div className="grid grid-cols-1 dark:bg-gray-900 max-w-xl mx-auto pt-20">
+					{/** Experiences timeline */}
+					{experience.map((ex, idx) => {
+						return (
+							<ExperienceCard
+								key={idx}
+								title={ex.title}
+								description={ex.description}
+								company={ex.company}
+								companyUrl={ex.companyUrl}
+								year={ex.year}
+								showDivider={
+									experience.length - 1 === idx ? false : true
+								}
+							/>
+						)
+					})}
+				</div>
 			</div>
 		</section>
 	)
