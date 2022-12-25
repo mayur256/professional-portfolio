@@ -10,6 +10,12 @@ export const Header = (): ReactElement => {
 	const { theme, setTheme } = useTheme()
 	const [mounted, setMounted] = useState(false)
 
+	const navLinks = [
+		{ link: '/', text: 'home' },
+		{ link: '/experience', text: 'experience' },
+		{ link: '/projects', text: 'projects' },
+	]
+
 	// router hook
 	const router = useRouter()
 
@@ -34,16 +40,22 @@ export const Header = (): ReactElement => {
 
 				{/** Navigation links */}
 				<div className="space-x-8 hidden md:block">
-					<Link
-						href="/"
-						className={`text-base  ${
-							router.asPath === '/'
-								? 'text-gray-800 font-bold dark:text-white'
-								: 'text-gray-600 dark:text-gray-300 font-normal '
-						}`}
-					>
-						Home{' '}
-					</Link>
+					{navLinks.map(({ link, text }, idx) => {
+						return (
+							<Link
+								key={`${text}-${idx}`}
+								href={link}
+								className={`text-base capitalize
+                                    ${
+										router.asPath === link
+											? 'text-gray-800 font-bold dark:text-white'
+											: 'text-gray-600 dark:text-gray-300 font-normal '
+									}`}
+							>
+								{text}{' '}
+							</Link>
+						)
+					})}
 				</div>
 
 				{/** Social Links and theme toggler */}

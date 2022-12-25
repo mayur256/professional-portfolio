@@ -6,9 +6,7 @@ export const Footer = (): ReactElement => {
 	return (
 		<footer className="dark:bg-gray-900">
 			<div className="flex flex-col md:space-y-0 md:flex-row justify-between md:items-center p-4">
-				<div>
-					<p>&copy; Your Name. All Rights Reserved.</p>
-				</div>
+				<div></div>
 				<div>
 					<div>
 						Developed by
