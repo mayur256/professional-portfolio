@@ -12,6 +12,7 @@ export const Footer = (): ReactElement => {
 						role="button"
 						target="_blank"
 						rel="noreferrer"
+						title="Facebook"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -30,6 +31,7 @@ export const Footer = (): ReactElement => {
 						role="button"
 						target="_blank"
 						rel="noreferrer"
+						title="Instagram"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -48,6 +50,7 @@ export const Footer = (): ReactElement => {
 						role="button"
 						target="_blank"
 						rel="noreferrer"
+						title="Twitter"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +69,7 @@ export const Footer = (): ReactElement => {
 					<div>
 						Developed by
 						<div className="inline-block transform hover:scale-110 hover:-rotate-3 transition duration-300">
-							<a className="hover:bg-red-500 rounded-md px-2 py-1  hover:text-gray-50">
+							<a className="hover:bg-lime-300 rounded-md px-2 py-1 hover:text-gray-800">
 								Mayur Upadhayay &#8482;
 							</a>
 						</div>

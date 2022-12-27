@@ -1,6 +1,7 @@
 // Top level imports
 import { ReactElement, useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useTheme } from 'next-themes'
 import { useRouter } from 'next/router'
 
@@ -30,12 +31,14 @@ export const Header = (): ReactElement => {
 			<div className="flex md:flex-row justify-between items-center">
 				{/** Logo or header */}
 				<div className="flex flex-col">
-					<h1 className="font-semibold text-xl dark:text-gray-100">
-						Mayur Upadhayay
-					</h1>
-					<p className="text-base text-gray-500 dark:text-white dark:font-bold">
-						Software Developer
-					</p>
+					<Image
+						title="logo"
+						height={50}
+						width={100}
+						src="/mark.svg"
+						alt="Logo"
+						className="hidden h-12 w-auto lg:block"
+					/>
 				</div>
 
 				{/** Navigation links */}
@@ -65,6 +68,7 @@ export const Header = (): ReactElement => {
 						role="button"
 						target="_blank"
 						rel="noreferrer"
+						title="Facebook"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -83,6 +87,7 @@ export const Header = (): ReactElement => {
 						role="button"
 						target="_blank"
 						rel="noreferrer"
+						title="Instagram"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -101,6 +106,7 @@ export const Header = (): ReactElement => {
 						role="button"
 						target="_blank"
 						rel="noreferrer"
+						title="Twitter"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -117,10 +123,11 @@ export const Header = (): ReactElement => {
 					<button
 						aria-label="Toggle Dark Mode"
 						type="button"
-						className="w-10 h-10 p-3 rounded focus:outline-none"
+						className="w-10 h-10 rounded focus:outline-none"
 						onClick={() =>
 							setTheme(theme === 'dark' ? 'light' : 'dark')
 						}
+						title="Toggle dark mode"
 					>
 						{mounted && (
 							<svg
@@ -128,7 +135,7 @@ export const Header = (): ReactElement => {
 								viewBox="0 0 24 24"
 								fill="currentColor"
 								stroke="currentColor"
-								className="w-4 h-4 text-yellow-500 dark:text-yellow-500"
+								className="w-7 h-7 text-yellow-500 dark:text-yellow-500"
 							>
 								{theme === 'dark' ? (
 									<path
