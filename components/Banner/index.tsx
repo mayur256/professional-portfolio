@@ -18,7 +18,10 @@ export const Banner = (): ReactElement => {
 
 	// Main JSX
 	return (
-		<div className="flex flex-row justify-center items-start overflow-hidden">
+		<section
+			className="flex flex-row justify-center items-start overflow-hidden"
+			id="banner"
+		>
 			{/** Texts Container */}
 			<div className="w-full md:w-2/3 mx-auto text-center md:text-left lg:p-20">
 				<div data-aos="fade-left" data-aos-duration="1000">
@@ -28,7 +31,7 @@ export const Banner = (): ReactElement => {
 					<h1 className="text-4xl md:text-6xl font-bold text-gray-700 dark:text-gray-200 my-2">
 						{name}
 					</h1>
-					<div className="md:text-2xl">
+					<div className="md:text-xl">
 						<p
 							dangerouslySetInnerHTML={{ __html: description }}
 						></p>
@@ -52,6 +55,6 @@ export const Banner = (): ReactElement => {
 					/>
 				</div>
 			</div>
-		</div>
+		</section>
 	)
 }
