@@ -1,15 +1,21 @@
 // top level imports
 import { ReactElement } from 'react'
-
+import { useTheme } from 'next-themes'
 // Multi-carousel
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 
 // Components
 import { _80 } from 'components/Meters/_80'
+import { _95 } from 'components/Meters/_95'
+import { _90 } from 'components/Meters/_90'
 
 // Component definition
 export const Skills = (): ReactElement => {
+	// hooks
+	const { theme } = useTheme()
+	const fill: string | undefined = theme === 'dark' ? 'white' : undefined
+
 	const responsive = {
 		superLargeDesktop: {
 			breakpoint: { max: 4000, min: 3000 },
@@ -30,12 +36,11 @@ export const Skills = (): ReactElement => {
 	}
 
 	const skills = [
-		{ id: 1, name: 'web development', skillMeter: <_80 /> },
-		{ id: 2, name: 'web development', skillMeter: <_80 /> },
-		{ id: 3, name: 'web development', skillMeter: <_80 /> },
-		{ id: 4, name: 'web development', skillMeter: <_80 /> },
-		{ id: 5, name: 'web development', skillMeter: <_80 /> },
-		{ id: 6, name: 'web development', skillMeter: <_80 /> },
+		{ id: 1, name: 'web development', skillMeter: <_95 fill={fill} /> },
+		{ id: 3, name: 'SDLC', skillMeter: <_90 fill={fill} /> },
+		{ id: 2, name: 'TDD', skillMeter: <_80 fill={fill} /> },
+		{ id: 4, name: 'OOPs', skillMeter: <_80 fill={fill} /> },
+		{ id: 5, name: 'Debugging', skillMeter: <_80 fill={fill} /> },
 	]
 
 	// Main JSX

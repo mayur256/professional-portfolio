@@ -10,8 +10,8 @@ interface IProps {
 export const _95 = ({ fill = 'black' }: Partial<IProps>): ReactElement => {
 	return (
 		<svg
-			width="204"
-			height="204"
+			width="150"
+			height="150"
 			viewBox="0 0 204 204"
 			xmlns="http://www.w3.org/2000/svg"
 		>
@@ -32,8 +32,8 @@ export const _95 = ({ fill = 'black' }: Partial<IProps>): ReactElement => {
 					y2="92.098"
 					gradientUnits="userSpaceOnUse"
 				>
-					<stop stop-color="#AA367C" />
-					<stop offset="1" stop-color="#4A2FBD" />
+					<stop stopColor="#AA367C" />
+					<stop offset="1" stopColor="#4A2FBD" />
 				</linearGradient>
 			</defs>
 		</svg>
