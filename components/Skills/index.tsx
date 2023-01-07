@@ -1,6 +1,7 @@
 // top level imports
 import { ReactElement } from 'react'
 import { useTheme } from 'next-themes'
+
 // Multi-carousel
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
@@ -48,7 +49,7 @@ export const Skills = (): ReactElement => {
 		<section id="skills" className="m-8 p-8 skill-slider">
 			<div className="max-w-6xl mx-auto h-24 bg-white dark:bg-gray-800">
 				<h1 className="text-2xl md:text-4xl font-bold text-center md:text-left">
-					Skills - listed in order of competence
+					Skills - listed with competency meter
 				</h1>
 			</div>
 

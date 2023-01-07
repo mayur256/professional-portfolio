@@ -15,6 +15,7 @@ export const Header = (): ReactElement => {
 		{ link: '/', text: 'home' },
 		{ link: '/experience', text: 'experience' },
 		{ link: '/projects', text: 'projects' },
+		{ link: '/about', text: 'about' },
 	]
 
 	// router hook

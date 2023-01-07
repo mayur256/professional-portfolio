@@ -1,13 +1,13 @@
 import { ReactElement } from 'react'
 
-import { Project } from 'components/Project'
+import { AboutMe } from 'components/AboutMe'
 import AppLayout from '../components/AppContainer'
 
 // Experience Page Component
-export default function ProjectsPage(): ReactElement {
+export default function AboutPage(): ReactElement {
 	return (
 		<AppLayout>
-			<Project />
+			<AboutMe />
 		</AppLayout>
 	)
 }
