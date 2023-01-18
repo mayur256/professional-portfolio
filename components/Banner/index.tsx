@@ -38,16 +38,12 @@ export const Banner = (): ReactElement => {
 			</div>
 
 			{/* Image container */}
-			<div className="relative w-full lg:block md:w-1/2 md:-mr-40 md:mt-20">
-				<div
-					className="md:w-3/4"
-					data-aos="fade-left"
-					data-aos-duration="1000"
-				>
+			<div className="grid place-content-center w-full relative md:block md:w-1/2 md:-mr-40 md:mt-20">
+				<div data-aos="fade-left" data-aos-duration="1000">
 					<Image
+						className="flex justify-center"
 						src="/profile.jpg"
 						alt="profile-mayur-upadhayay"
-						className="shadow"
 						height={200}
 						width={400}
 					/>
