@@ -4,9 +4,9 @@ import { ReactElement } from 'react'
 // Component definition
 export const Footer = (): ReactElement => {
 	return (
-		<footer className="dark:bg-gray-900">
-			<div className="flex flex-col md:space-y-0 md:flex-row justify-between md:items-center p-4">
-				<div className="space-x-4 flex flex-row items-center">
+		<footer className="dark:bg-gray-900 text-right">
+			<div className="flex flex-col p-4 space-y-4 justify-between md:space-y-0 md:flex-row md:items-center">
+				<div className="space-x-4 flex flex-row justify-end">
 					<a
 						href="https://www.facebook.com/mayur.upadhayay.37/"
 						role="button"

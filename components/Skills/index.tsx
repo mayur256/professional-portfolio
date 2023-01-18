@@ -46,9 +46,9 @@ export const Skills = (): ReactElement => {
 
 	// Main JSX
 	return (
-		<section id="skills" className="m-8 p-8 skill-slider">
+		<section id="skills" className="m-8 md:p-8 skill-slider">
 			<div className="max-w-6xl mx-auto h-24 bg-white dark:bg-gray-800">
-				<h1 className="text-2xl md:text-4xl font-bold text-center md:text-left">
+				<h1 className="text-2xl md:text-4xl font-bold md:text-left">
 					Skills - listed with competency meter
 				</h1>
 			</div>
@@ -57,7 +57,9 @@ export const Skills = (): ReactElement => {
 				{skills.map((skill) => (
 					<div className="item" key={skill.id}>
 						{skill.skillMeter}
-						<h5 className="capitalize text-2xl">{skill.name}</h5>
+						<h5 className="capitalize text-1xl md:text-2xl">
+							{skill.name}
+						</h5>
 					</div>
 				))}
 			</Carousel>

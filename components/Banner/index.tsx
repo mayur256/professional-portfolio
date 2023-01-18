@@ -19,11 +19,11 @@ export const Banner = (): ReactElement => {
 	// Main JSX
 	return (
 		<section
-			className="flex flex-row justify-center items-start overflow-hidden"
+			className="flex flex-col md:flex-row justify-center items-start overflow-hidden"
 			id="banner"
 		>
 			{/** Texts Container */}
-			<div className="w-full md:w-2/3 mx-auto text-center md:text-left lg:p-20">
+			<div className="w-full p-2 md:w-2/3 mx-auto text-center md:text-left lg:p-20">
 				<div data-aos="fade-left" data-aos-duration="1000">
 					<span className="text-1xl font-bold">
 						Hello, my name is{' '}
@@ -32,17 +32,15 @@ export const Banner = (): ReactElement => {
 						{name}
 					</h1>
 					<div className="md:text-xl">
-						<p
-							dangerouslySetInnerHTML={{ __html: description }}
-						></p>
+						<p dangerouslySetInnerHTML={{ __html: description }} />
 					</div>
 				</div>
 			</div>
 
 			{/* Image container */}
-			<div className="hidden lg:block relative w-full md:w-1/2 -mr-40 mt-20">
+			<div className="relative w-full lg:block md:w-1/2 md:-mr-40 md:mt-20">
 				<div
-					className="w-3/4"
+					className="md:w-3/4"
 					data-aos="fade-left"
 					data-aos-duration="1000"
 				>
