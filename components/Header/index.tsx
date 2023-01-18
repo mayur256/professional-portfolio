@@ -29,7 +29,7 @@ export const Header = (): ReactElement => {
 	// Main JSX
 	return (
 		<header className="p-4">
-			<div className="flex md:flex-row justify-between items-center">
+			<div className="flex flex-col md:flex-row justify-between md:items-center">
 				{/** Logo or header */}
 				<div className="flex flex-col">
 					<Image
@@ -43,7 +43,7 @@ export const Header = (): ReactElement => {
 				</div>
 
 				{/** Navigation links */}
-				<div className="space-x-8 hidden md:block">
+				<div className="space-x-8 pb-4 md:block">
 					{navLinks.map(({ link, text }, idx) => {
 						return (
 							<Link
@@ -63,7 +63,7 @@ export const Header = (): ReactElement => {
 				</div>
 
 				{/** Social Links and theme toggler */}
-				<div className="space-x-4 flex flex-row items-center">
+				<div className="space-x-8 flex flex-row justify-end md:items-center">
 					<a
 						href="https://www.facebook.com/mayur.upadhayay.37/"
 						role="button"
@@ -124,7 +124,7 @@ export const Header = (): ReactElement => {
 					<button
 						aria-label="Toggle Dark Mode"
 						type="button"
-						className="w-10 h-10 rounded focus:outline-none"
+						className="w-10 rounded focus:outline-none"
 						onClick={() =>
 							setTheme(theme === 'dark' ? 'light' : 'dark')
 						}
@@ -136,7 +136,7 @@ export const Header = (): ReactElement => {
 								viewBox="0 0 24 24"
 								fill="currentColor"
 								stroke="currentColor"
-								className="w-7 h-7 text-yellow-500 dark:text-yellow-500"
+								className="w-7 text-yellow-500 dark:text-yellow-500"
 							>
 								{theme === 'dark' ? (
 									<path
