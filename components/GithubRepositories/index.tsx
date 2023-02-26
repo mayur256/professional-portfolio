@@ -11,7 +11,7 @@ import { user } from '@utils/user-data'
 
 // props type definitions
 interface IProps {
-	repositories?: Array<Repo>
+	repositories: Array<Repo>
 }
 
 // Component definition
