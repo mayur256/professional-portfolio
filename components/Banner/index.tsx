@@ -6,10 +6,12 @@ import Image from 'next/image'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
+// Utils
+import { user } from '@utils/user-data'
+
 // Component definition
 export const Banner = (): ReactElement => {
-	const name = 'Mayur Upadhyay'
-	const description = `I am a Full Stack Software Engineer with a demonstrated history of working in technologies like React, Node, Vue and Laravel for over 2.8+ years. Strong engineering professional with a Master's degree focused in Computer Science.`
+	const { name, description } = user
 
 	// component mounted
 	useEffect(() => {

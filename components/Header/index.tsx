@@ -63,7 +63,7 @@ export const Header = (): ReactElement => {
 				</div>
 
 				{/** Social Links and theme toggler */}
-				<div className="space-x-8 flex flex-row justify-end md:items-center">
+				<div className="space-x-8 flex flex-row justify-end md:space-x-4 md:items-center">
 					<a
 						href="https://www.facebook.com/mayur.upadhayay.37/"
 						role="button"

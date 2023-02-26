@@ -90,3 +90,9 @@ export const projects = [
 		url: 'https://shopnet.heroku.com/',
 	},
 ]
+
+export const user = {
+	name: 'Mayur Upadhayay',
+	description: `I am a Full Stack Software Engineer with a demonstrated history of working in technologies like React, Node, Vue and Laravel for over 2.8+ years. Strong engineering professional with a Master's degree focused in Computer Science.`,
+	githubUsername: 'mayur256',
+}
