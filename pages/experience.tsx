@@ -6,7 +6,7 @@ import { Experience } from '../components/Experience'
 // Experience Page Component
 export default function ExperiencePage(): ReactElement {
 	return (
-		<AppLayout>
+		<AppLayout title="Mayur Upadhayay - Experience">
 			<Experience />
 		</AppLayout>
 	)

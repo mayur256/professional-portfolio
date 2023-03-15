@@ -6,7 +6,7 @@ import AppLayout from '../components/AppContainer'
 // Experience Page Component
 export default function AboutPage(): ReactElement {
 	return (
-		<AppLayout>
+		<AppLayout title="Mayur Upadhayay - About">
 			<AboutMe />
 		</AppLayout>
 	)

@@ -15,7 +15,7 @@ interface IProps {
 
 // Component definition
 export default function AppLayout({
-	title = 'Mayur',
+	title = 'Mayur Upadhayay',
 	description = '',
 	children,
 }: IProps): ReactElement {
