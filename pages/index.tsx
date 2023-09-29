@@ -16,6 +16,7 @@ import { user } from '@utils/user-data'
 interface IProps {
 	repositories: Array<Repo>
 }
+export const runtime = 'edge';
 
 export default function Home({ repositories = [] }: IProps): ReactElement {
 	return (
