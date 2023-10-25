@@ -93,6 +93,11 @@ export const projects = [
 
 export const user = {
 	name: 'Mayur Upadhayay',
-	description: `I am a Full Stack Software Engineer with a demonstrated history of working in technologies like React, Node, Vue and Laravel for over 2.8+ years. Strong engineering professional with a Master's degree focused in Computer Science.`,
-	githubUsername: 'mayur256',
+    description: `A passionate Full Stack JavaScript developer with expertise in React and Node. Currently leading an e-commerce project and consulting on complex user interfaces, I'm on a mission to push boundaries and embrace continuous learning. I specialize in crafting cloud applications with Next.js and AWS Lambda functions, leveraging the power of innovation and technology.`,
+    githubUsername: 'mayur256',
+    about: 'As a <em>Full Stack JavaScript developer</em>, my journey has been shaped by a relentless pursuit of growth and excellence. Currently, I find myself leading a dynamic e-commerce project for a valued client, while also sharing my expertise as a <strong>consultant</strong> to another team, specializing in crafting intricate user interfaces and harnessing the potential of React.',
+    mission: 'My professional and personal mission is simple yet profound - to continuously challenge myself, to embrace new horizons, and to remain a steadfast learner. In the ever-evolving landscape of web development, I am committed to pushing my boundaries to reach new heights of innovation and problem-solving.',
+    expertise: `I'm passionate about developing cloud applications, with a particular focus on combining the power of Next.js and AWS Lambda functions. This fusion of cutting-edge technologies enables me to create efficient, scalable, and high-performance solutions for my clients.`,
+    approach: `In a professional and collaborative manner, I thrive on tackling challenges head-on. My experiences have taught me the value of Agile methodologies and Test-Driven Development (TDD) in ensuring the success of critical projects. I have had the privilege of leading a diverse range of projects, where I've honed my skills in React, Node, Express, and AWS services to deliver robust and innovative solutions.`,
+    beyond: `Beyond my professional endeavors, I'm drawn to explore computing's role in addressing critical global challenges. I believe that technology can be a catalyst for positive change, and I'm committed to applying my skills to create meaningful solutions that impact the world.`
 }

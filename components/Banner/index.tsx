@@ -1,6 +1,7 @@
 // top level imports
 import { ReactElement, useEffect } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 // AOS
 import Aos from 'aos'
@@ -34,7 +35,15 @@ export const Banner = (): ReactElement => {
 						{name}
 					</h1>
 					<div className="md:text-xl">
-						<p dangerouslySetInnerHTML={{ __html: description }} />
+                        <p dangerouslySetInnerHTML={{ __html: description }} />
+
+                        <Link
+                            href="/about"
+                            className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                        >
+                            Read more
+                        </Link>
+
 					</div>
 				</div>
 			</div>
