@@ -10,7 +10,7 @@ import NextNProgress from 'nextjs-progressbar'
 
 export default function App({ Component, pageProps }: AppProps) {
 	return (
-		<ThemeProvider defaultTheme="light" attribute="class">
+		<ThemeProvider defaultTheme="dark" attribute="class">
 			<NextNProgress />
 			<Component {...pageProps} />
 		</ThemeProvider>
