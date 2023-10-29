@@ -1,9 +1,6 @@
 import { ReactElement } from 'react'
-
+// Constituent components
 import AppLayout from '../components/AppContainer'
-import { Banner } from '../components/Banner'
-import { Skills } from 'components/Skills'
-import { GithubRepositories } from 'components/GithubRepositories'
 import { ContactForm } from 'components/ContactForm'
 
 export default function Contact(): ReactElement {
