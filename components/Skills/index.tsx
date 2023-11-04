@@ -53,7 +53,7 @@ export const Skills = (): ReactElement => {
 				</h1>
 			</div>
 
-			<Carousel responsive={responsive}>
+			<Carousel responsive={responsive} className="pb-14">
 				{skills.map((skill) => (
 					<div className="item" key={skill.id}>
 						{skill.skillMeter}
