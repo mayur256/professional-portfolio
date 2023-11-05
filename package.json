@@ -19,23 +19,25 @@
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
 		"react-multi-carousel": "^2.8.2",
+		"sweetalert2": "^11.9.0",
+		"sweetalert2-react-content": "^5.0.7",
 		"typescript": "4.9.4"
 	},
 	"devDependencies": {
 		"@cloudflare/next-on-pages": "^1.6.1",
 		"@types/aos": "^3.0.4",
+		"@types/node": "18.11.16",
+		"@types/react": "18.0.26",
+		"@types/react-dom": "18.0.9",
 		"@typescript-eslint/eslint-plugin": "^5.46.1",
 		"autoprefixer": "^10.4.13",
+		"eslint": "8.30.0",
+		"eslint-config-next": "13.0.7",
 		"eslint-config-prettier": "^8.5.0",
 		"husky": "^8.0.2",
 		"lint-staged": "^13.1.0",
 		"postcss": "^8.4.20",
 		"prettier": "^2.8.1",
-		"tailwindcss": "^3.2.4",
-		"@types/node": "18.11.16",
-		"@types/react": "18.0.26",
-		"@types/react-dom": "18.0.9",
-		"eslint": "8.30.0",
-		"eslint-config-next": "13.0.7"
+		"tailwindcss": "^3.2.4"
 	}
 }
