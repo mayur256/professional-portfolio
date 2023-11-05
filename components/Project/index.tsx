@@ -12,13 +12,13 @@ export const Project = (): ReactElement => {
 	return (
 		<section className="bg-white dark:bg-gray-800">
 			<div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
-				<h1 className="text-4xl md:text-8xl font-bold py-10 text-center md:text-left">
+				<h1 className="text-4xl md:text-8xl font-bold py-20 text-center md:text-left">
 					Projects
 				</h1>
 			</div>
 
 			{/* Grid starts here */}
-			<div className="dark:bg-gray-900">
+			<div className="dark:bg-gray-900 pb-8 pt-2">
 				<div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
 					{projects.map((proj, idx) => {
 						return (

@@ -49,7 +49,7 @@ export default function AppLayout({
 			{/** Navbar */}
 			<Header />
 
-			<main className="dark:bg-gray-800 w-full pb-9">{children}</main>
+			<main className="dark:bg-gray-800 w-full">{children}</main>
 
 			<Footer />
 		</>
