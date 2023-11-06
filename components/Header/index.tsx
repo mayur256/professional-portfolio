@@ -127,14 +127,14 @@ export const Header = (): ReactElement => {
                             </svg>
                         </a>
 
-                        <button
+                        <a
                             aria-label="Toggle Dark Mode"
-                            type="button"
                             className="w-10 rounded focus:outline-none"
                             onClick={() =>
                                 setTheme(theme === 'dark' ? 'light' : 'dark')
                             }
                             title="Toggle dark mode"
+                            role="button"
                         >
                             {mounted && (
                                 <svg
@@ -161,11 +161,11 @@ export const Header = (): ReactElement => {
                                     )}
                                 </svg>
                             )}
-                        </button>
+                        </a>
                     </div>
 
                     {/** Mobile links */}
-                    <div className="lg:hidden">
+                    <div className="lg:hidden md:hidden">
                         <button
                             className="text-dark p-2 focus:outline-none focus:ring focus:ring-blue-400"
                             id="menu-toggle"
@@ -179,9 +179,9 @@ export const Header = (): ReactElement => {
                                 stroke="currentColor"
                             >
                                 <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
                                     d="M4 6h16M4 12h16m-7 6h7"
                                 />
                             </svg>
