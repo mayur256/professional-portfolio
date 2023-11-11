@@ -46,6 +46,7 @@ export default function AppLayout({
                 <meta property="og:type" content={meta.type} />
                 <meta property="og:site_name" content="Mayur Upadhayay" />
                 <meta name="twitter:image" content={meta.image} />
+                <meta name="google-site-verification" content="2lYtwdKQ3lPLaBq3gp6zMWPsIUfWiWlw1B-mzUx47AQ" />
             </Head>
 
             <div className="container">
