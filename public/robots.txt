@@ -1,0 +1,4 @@
+User-agent:*
+Disallow:
+
+Sitemap: https://mayur-portfolio.pages.dev/sitemap.xml
