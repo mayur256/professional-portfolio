@@ -1,6 +1,7 @@
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
+
 export const fetchLatestRepos = async (
 	githubUsername: string
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
 ): Promise<any> => {
 	const token = process.env.GITHUB_API_TOKEN ?? ''
 	const headers = {

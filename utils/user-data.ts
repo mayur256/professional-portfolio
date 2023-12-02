@@ -42,7 +42,7 @@ export const experience = [
 ]
 
 export const projects = [
-	{
+    {
 		name: 'Doctodoor',
 		description:
 			'Comprehensive telemedicine solution to manage patients health, meanwhile leveraging telemedicine parity laws. Enables CMS remote patient monitoring management and reimbursement.',
@@ -54,7 +54,7 @@ export const projects = [
 		description:
 			'Macroplan 2140™ is a blueprint for business planning consisting of business planning tools and services, to serve small and medium businesses in the 21st century.',
 		image: '/macroplan-2140.png',
-		url: 'https://macroplanfrontend.estonetech.in/',
+		url: 'https://www.macroplan-2140.com/',
 	},
 	{
 		name: 'RxHelp Copay/HCPay',
