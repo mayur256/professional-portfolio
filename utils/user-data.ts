@@ -7,7 +7,7 @@ export const experience = [
 		end: 'Present',
 		companyUrl: 'https://mroads.com',
 		description:
-			'Write maintainable and robust code along with test cases. Also communicate with clients to perform requirement elicitation.',
+			'In my role as a Senior Software Engineer at IPangram, I\'ve been dedicated to spearheading development initiatives, fostering innovation, and orchestrating seamless collaboration across multifaceted teams to architect and deliver sophisticated, high-caliber software solutions. Specializing in full-stack development, I leverage a comprehensive toolkit encompassing React, NestJS, and Gin (Go language) to engineer high-performance web applications and real-time systems. Furthermore, my responsibilities extend to leading pivotal code review sessions and orchestrating Agile meetings to drive project excellence.',
 	},
 	{
 		title: 'Software Developer',
@@ -45,16 +45,16 @@ export const projects = [
     {
 		name: 'O-Line-O Ecommerce',
 		description:
-			'Comprehensive telemedicine solution to manage patients health, meanwhile leveraging telemedicine parity laws. Enables CMS remote patient monitoring management and reimbursement.',
+			'In my capacity as a Lead Software Engineer, I undertook a pivotal role at OLineo, a distinguished online retail brand with an extensive network of over 100 stores across the country. My engagement in developing a comprehensive MERN stack e-commerce application encompassed a spectrum of responsibilities and achievements, reflecting my commitment to architectural excellence and project success.',
 		image: '/o-line-o.png',
 		url: 'https://olineoindia.com/',
 	},
     {
 		name: 'Iasys',
 		description:
-			'Comprehensive telemedicine solution to manage patients health, meanwhile leveraging telemedicine parity laws. Enables CMS remote patient monitoring management and reimbursement.',
+			'In my capacity as a Software Consultant at Iasys, a distinguished independent system integrator specializing in Testing & Data Management Solutions, I played a pivotal role in advancing their flagship product. Notably, this was a sophisticated micro frontend project, comprising several apps custom-tailored to meet the unique needs of Iasys\'s clients.',
 		image: '/iasys.png',
-		url: 'https://olineoindia.com/',
+		url: 'https://www.iasys.co.in/',
 	},
     {
 		name: 'Doctodoor',
