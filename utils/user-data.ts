@@ -43,6 +43,20 @@ export const experience = [
 
 export const projects = [
     {
+		name: 'O-Line-O Ecommerce',
+		description:
+			'Comprehensive telemedicine solution to manage patients health, meanwhile leveraging telemedicine parity laws. Enables CMS remote patient monitoring management and reimbursement.',
+		image: '/o-line-o.png',
+		url: 'https://olineoindia.com/',
+	},
+    {
+		name: 'Iasys',
+		description:
+			'Comprehensive telemedicine solution to manage patients health, meanwhile leveraging telemedicine parity laws. Enables CMS remote patient monitoring management and reimbursement.',
+		image: '/iasys.png',
+		url: 'https://olineoindia.com/',
+	},
+    {
 		name: 'Doctodoor',
 		description:
 			'Comprehensive telemedicine solution to manage patients health, meanwhile leveraging telemedicine parity laws. Enables CMS remote patient monitoring management and reimbursement.',
