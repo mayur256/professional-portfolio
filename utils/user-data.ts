@@ -17,7 +17,7 @@ export const experience = [
 		end: '2022',
 		companyUrl: 'https://bosleo.com/',
 		description:
-			'Collaborated with teams of Innomar and RxHelp to deliver a platform that helps patients and pharmacists to mitigate costs on medicine through insurance.',
+			'Played a pivotal role as a Software Engineer within a collaborative effort involving Innomar and RxHelp teams. Engaged directly with clients to gather and define comprehensive requirements for a platform designed to assist citizens in claiming insurance on their medical bills. Utilized React and .NET technologies to contribute significantly to the successful completion of the project, demonstrating a commitment to delivering impactful solutions.',
 	},
 	{
 		title: 'Software Developer',
@@ -45,7 +45,7 @@ export const projects = [
     {
 		name: 'O-Line-O Ecommerce',
 		description:
-			'In my capacity as a Lead Software Engineer, I undertook a pivotal role at OLineo, a distinguished online retail brand with an extensive network of over 100 stores across the country. My engagement in developing a comprehensive MERN stack e-commerce application encompassed a spectrum of responsibilities and achievements, reflecting my commitment to architectural excellence and project success.',
+			'As a Lead Software Engineer at OLineO, a prominent online retail brand boasting an extensive network of over 100 stores nationwide, I assumed a crucial role. My involvement in crafting a robust MERN stack e-commerce application spanned a diverse range of responsibilities and accomplishments, underscoring my dedication to architectural excellence and the successful delivery of projects.',
 		image: '/o-line-o.png',
 		url: 'https://olineoindia.com/',
 	},
