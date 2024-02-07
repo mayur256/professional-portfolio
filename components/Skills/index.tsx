@@ -57,20 +57,38 @@ export const Skills = (): ReactElement => {
                 { url: '/tools/frontend/html.png', alt: 'HTML' }
             ]
         },
-        /* {
+        {
             title: 'backend',
-            subtitle: 'nodejs, gin & laravel',
+            subtitle: 'nodejs, nestjs, go(gin) & laravel',
             icons: [
-                { url: '/tools/frontend/react.png', alt: 'React' },
-                { url: '/tools/frontend/vue.png', alt: 'Vue' },
-                { url: '/tools/frontend/js.png', alt: 'JS' },
-                { url: '/tools/frontend/css.png', alt: 'CSS' },
-                { url: '/tools/frontend/html.png', alt: 'HTML' }
+                { url: '/tools/backend/nodejs.png', alt: 'Node' },
+                { url: '/tools/backend/nestjs.png', alt: 'Nestjs' },
+                { url: '/tools/backend/gin.webp', alt: 'Gin' },
+                { url: '/tools/backend/laravel.svg', alt: 'Laravel' }
             ]
-        } */
+        },
+        {
+            title: 'databases',
+            subtitle: 'mysql, mongodb & aws dynamodb',
+            icons: [
+                { url: '/tools/databases/mysql.png', alt: 'MySQL' },
+                { url: '/tools/databases/mongodb.svg', alt: 'MongoDB' },
+                { url: '/tools/databases/dynamo.png', alt: 'DynamoDB' },
+            ]
+        },
+        {
+            title: 'package management & module federation',
+            subtitle: 'npm, yarn, webpack, babel & lerna',
+            icons: [
+                { url: '/tools/package/npm.png', alt: 'NPM' },
+                { url: '/tools/package/webpack.png', alt: 'Webpack' },
+                { url: '/tools/package/vite.svg', alt: 'Vite' },
+                { url: '/tools/package/babel.svg', alt: 'Babel' },
+            ]
+        }
     ]
 
-    // Main JSX
+    // Main content
     return (
         <section id="skills" className="m-8 md:p-8 skill-slider">
             <div className="max-w-6xl mx-auto h-24 bg-white dark:bg-gray-800">
@@ -90,7 +108,7 @@ export const Skills = (): ReactElement => {
                 ))}
             </Carousel>
 
-            <div className="max-w-6xl mx-auto h-24 bg-white dark:bg-gray-800">
+            <div className="max-w-6xl mx-auto h-72 bg-white dark:bg-gray-800">
                 <h1 className="text-2xl md:text-4xl font-bold md:text-left mb-4">
                     Tools
                 </h1>
