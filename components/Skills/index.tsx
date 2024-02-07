@@ -41,8 +41,8 @@ export const Skills = (): ReactElement => {
         { id: 1, name: 'web development', skillMeter: <_95 fill={fill} /> },
         { id: 3, name: 'SDLC', skillMeter: <_90 fill={fill} /> },
         { id: 2, name: 'TDD', skillMeter: <_80 fill={fill} /> },
-        { id: 4, name: 'OOPs', skillMeter: <_80 fill={fill} /> },
-        { id: 5, name: 'Debugging', skillMeter: <_80 fill={fill} /> },
+        { id: 4, name: 'OOPs', skillMeter: <_90 fill={fill} /> },
+        { id: 5, name: 'Debugging', skillMeter: <_90 fill={fill} /> },
     ];
 
     const tools = [
@@ -106,13 +106,21 @@ export const Skills = (): ReactElement => {
             ]
         },
         {
-            title: 'aws services',
-            subtitle: 'ec2, s3, cloudfront & lambda',
+            title: 'containerization & orchestration',
+            subtitle: 'docker & kubernetes',
             icons: [
-                { url: '/tools/aws/ec2.svg', alt: 'EC2' },
-                { url: '/tools/aws/s3.svg', alt: 'S3' },
-                { url: '/tools/aws/cloudfront.webp', alt: 'Cloudfront' },
-                { url: '/tools/aws/lambda.png', alt: 'Lambda Functions' },
+                { url: '/tools/containerization/docker.png', alt: 'Docker' },
+                { url: '/tools/containerization/kubernetes.png', alt: 'Kubernetes' },
+            ]
+        },
+        {
+            title: 'version control system',
+            subtitle: 'git, github, gitlab & bitbucket',
+            icons: [
+                { url: '/tools/vcs/git.png', alt: 'Git' },
+                { url: '/tools/vcs/github.png', alt: 'Github' },
+                { url: '/tools/vcs/gitlab.png', alt: 'Gitlab' },
+                { url: '/tools/vcs/bitbucket.png', alt: 'Bitbucket' }
             ]
         }
     ]

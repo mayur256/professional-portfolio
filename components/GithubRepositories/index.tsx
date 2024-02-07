@@ -17,7 +17,7 @@ interface IProps {
 // Component definition
 export function GithubRepositories({ repositories = [] }: IProps) {
 	return (
-		<section className="bg-[#F1F1F1] dark:bg-gray-900 pb-8 lg:mb-40">
+		<section className="bg-[#F1F1F1] dark:bg-gray-900 pb-8">
 			<div className="max-w-6xl mx-auto">
 				<div className="flex flex-col md:flex-row justify-between items-center md:pt-35 mx-10">
 					<h1 className="text-6xl lg:text-9xl max-w-lg font-bold text-gray-500 my-20 md:my-0 md:text-white dark:text-gray-600 text-center lg:text-left">
