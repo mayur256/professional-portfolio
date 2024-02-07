@@ -85,6 +85,35 @@ export const Skills = (): ReactElement => {
                 { url: '/tools/package/vite.svg', alt: 'Vite' },
                 { url: '/tools/package/babel.svg', alt: 'Babel' },
             ]
+        },
+        {
+            title: 'web server management',
+            subtitle: 'nginx, pm2 & apache',
+            icons: [
+                { url: '/tools/webserver/nginx.png', alt: 'Nginx' },
+                { url: '/tools/webserver/pm2.png', alt: 'PM2' },
+                { url: '/tools/webserver/apache.png', alt: 'Apache' },
+            ]
+        },
+        {
+            title: 'aws services',
+            subtitle: 'ec2, s3, cloudfront & lambda',
+            icons: [
+                { url: '/tools/aws/ec2.svg', alt: 'EC2' },
+                { url: '/tools/aws/s3.svg', alt: 'S3' },
+                { url: '/tools/aws/cloudfront.webp', alt: 'Cloudfront' },
+                { url: '/tools/aws/lambda.png', alt: 'Lambda Functions' },
+            ]
+        },
+        {
+            title: 'aws services',
+            subtitle: 'ec2, s3, cloudfront & lambda',
+            icons: [
+                { url: '/tools/aws/ec2.svg', alt: 'EC2' },
+                { url: '/tools/aws/s3.svg', alt: 'S3' },
+                { url: '/tools/aws/cloudfront.webp', alt: 'Cloudfront' },
+                { url: '/tools/aws/lambda.png', alt: 'Lambda Functions' },
+            ]
         }
     ]
 
@@ -108,7 +137,7 @@ export const Skills = (): ReactElement => {
                 ))}
             </Carousel>
 
-            <div className="max-w-6xl mx-auto h-72 bg-white dark:bg-gray-800">
+            <div className="max-w-6xl mx-auto h-auto bg-white dark:bg-gray-800">
                 <h1 className="text-2xl md:text-4xl font-bold md:text-left mb-4">
                     Tools
                 </h1>
@@ -119,7 +148,7 @@ export const Skills = (): ReactElement => {
                             key={`${tool.title}-${index}`}
                             className="w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
                         >
-                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white uppercase">{tool.title}</h5>
+                            <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white uppercase">{tool.title}</h5>
                             <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 uppercase">{tool.subtitle}</p>
                             <div className="flex place-content-around">
                             {tool.icons.map((icon) => (
