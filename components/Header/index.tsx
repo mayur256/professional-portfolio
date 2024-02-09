@@ -42,9 +42,9 @@ export const Header = (): ReactElement => {
                         title="logo"
                         height={50}
                         width={100}
-                        src="/mark.svg"
+                        src="/company.jpg"
                         alt="Logo"
-                        className="hidden h-12 w-auto lg:block"
+                        className="hidden rounded-full h-12 w-auto lg:block"
                     />
                 </div>
 
