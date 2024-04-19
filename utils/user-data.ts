@@ -45,35 +45,35 @@ export const projects = [
     {
 		name: 'O-Line-O Ecommerce',
 		description:
-			'As a Lead Software Engineer at OLineO, a prominent online retail brand boasting an extensive network of over 100 stores nationwide, I assumed a crucial role. My involvement in crafting a robust MERN stack e-commerce application spanned a diverse range of responsibilities and accomplishments, underscoring my dedication to architectural excellence and the successful delivery of projects.',
+			'As a Lead Software Engineer at IPangram, I was given the responsibility to head development of an ecommerce web application for O-Line-O, a prominent online retail brand boasting an extensive network of over 100 stores nationwide, I assumed a crucial role. My involvement in crafting a robust MERN stack e-commerce application spanned a diverse range of responsibilities and accomplishments, underscoring my dedication to architectural excellence and the successful delivery of projects.',
 		image: '/o-line-o.png',
 		url: 'https://olineoindia.com/',
 	},
     {
 		name: 'Iasys',
 		description:
-			'In my capacity as a Software Consultant at Iasys, a distinguished independent system integrator specializing in Testing & Data Management Solutions, I played a pivotal role in advancing their flagship product. Notably, this was a sophisticated micro frontend project, comprising several apps custom-tailored to meet the unique needs of Iasys\'s clients.',
+			'In my capacity as a Software Consultant at Iasys through IPangram and Bonaventure Systems, a distinguished independent system integrator specializing in Testing & Data Management Solutions, I played a pivotal role in advancing their flagship product. Notably, this was a sophisticated micro frontend project, comprising several apps custom-tailored to meet the unique needs of Iasys\'s clients.',
 		image: '/iasys.png',
 		url: 'https://www.iasys.co.in/',
 	},
     {
 		name: 'Doctodoor',
 		description:
-			'Comprehensive telemedicine solution to manage patients health, meanwhile leveraging telemedicine parity laws. Enables CMS remote patient monitoring management and reimbursement.',
+			'Working as a Software Developer at Doctodoor. Contributed to comprehensive telemedicine solution to manage patients health, meanwhile leveraging telemedicine parity laws. Enables CMS remote patient monitoring management and reimbursement.',
 		image: '/doctodoor.png',
 		url: 'https://doctodoor.com/',
 	},
 	{
 		name: 'Macroplan',
 		description:
-			'Macroplan 2140™ is a blueprint for business planning consisting of business planning tools and services, to serve small and medium businesses in the 21st century.',
+			'Working as a Software Developer at E-stone technologies via IPangram. I was given a crucial role in developing Macroplan 2140™ is a blueprint for business planning consisting of business planning tools and services, to serve small and medium businesses in the 21st century.',
 		image: '/macroplan-2140.png',
 		url: 'https://www.macroplan-2140.com/',
 	},
 	{
 		name: 'RxHelp Copay/HCPay',
 		description:
-			'RxHelp ePay is a program that allows you or your clinic to be reimbursed for services you have provided to patients on behalf of a pharmaceutical manufacturer.',
+			'Working as a Software developer at Bosleo, made significant contribution as a Front-End developer to an internal product of RxHelp ePay is a program that allows you or your clinic to be reimbursed for services you have provided to patients on behalf of a pharmaceutical manufacturer.',
 		image: '/rxhelp.png',
 		url: 'https://rxhelpepay.innomar-strategies.com/',
 	},
@@ -101,7 +101,7 @@ export const projects = [
 		description: `The website allows users to navigate through a large catalog of products without distinguishing them on any access parameters.
 			However in order to make a purchase a user must register itself as a customer.User can still browse and search products based on category.`,
 		image: '/shopnet.png',
-		url: 'https://shopnet.heroku.com/',
+		url: 'https://github.com/mayur256/shopnet',
 	},
 ]
 
