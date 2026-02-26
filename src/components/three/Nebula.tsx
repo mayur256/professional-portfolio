@@ -1,31 +1,74 @@
 "use client";
 
-import { useMemo } from "react";
+import { useRef } from "react";
+import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 
-export default function Nebula() {
-  const texture = useMemo(() => {
-    const canvas = document.createElement("canvas");
-    canvas.width = 512;
-    canvas.height = 512;
-    const ctx = canvas.getContext("2d")!;
+function createNoiseTexture(seed: number) {
+  const canvas = document.createElement("canvas");
+  canvas.width = 512;
+  canvas.height = 512;
+  const ctx = canvas.getContext("2d")!;
 
-    const gradient = ctx.createRadialGradient(256, 256, 0, 256, 256, 256);
-    gradient.addColorStop(0, "rgba(139, 92, 246, 0.3)");
-    gradient.addColorStop(0.4, "rgba(59, 130, 246, 0.2)");
-    gradient.addColorStop(0.7, "rgba(16, 16, 32, 0.1)");
-    gradient.addColorStop(1, "rgba(0, 0, 0, 0)");
+  const imageData = ctx.createImageData(512, 512);
+  const data = imageData.data;
 
-    ctx.fillStyle = gradient;
-    ctx.fillRect(0, 0, 512, 512);
+  for (let i = 0; i < data.length; i += 4) {
+    const noise = Math.random() * 100;
+    data[i] = noise;
+    data[i + 1] = noise;
+    data[i + 2] = noise;
+    data[i + 3] = 255;
+  }
 
-    return new THREE.CanvasTexture(canvas);
-  }, []);
+  ctx.putImageData(imageData, 0, 0);
+  ctx.filter = "blur(40px)";
+  ctx.drawImage(canvas, 0, 0);
+
+  return new THREE.CanvasTexture(canvas);
+}
+
+function NebulaLayer({
+  color,
+  opacity,
+  z,
+  seed,
+}: {
+  color: string;
+  opacity: number;
+  z: number;
+  seed: number;
+}) {
+  const meshRef = useRef<THREE.Mesh>(null);
+  const texture = createNoiseTexture(seed);
+
+  useFrame((state, delta) => {
+    if (meshRef.current) {
+      meshRef.current.rotation.z += delta * 0.005 * (seed + 1);
+    }
+  });
 
   return (
-    <mesh>
-      <sphereGeometry args={[100, 64, 64]} />
-      <meshBasicMaterial map={texture} side={THREE.BackSide} transparent />
+    <mesh ref={meshRef} position={[0, 0, z]}>
+      <planeGeometry args={[150, 150]} />
+      <meshBasicMaterial
+        map={texture}
+        transparent
+        opacity={opacity}
+        blending={THREE.AdditiveBlending}
+        depthWrite={false}
+        color={color}
+      />
     </mesh>
+  );
+}
+
+export default function Nebula() {
+  return (
+    <group>
+      <NebulaLayer color="#4A148C" opacity={0.08} z={-50} seed={0} />
+      <NebulaLayer color="#1A237E" opacity={0.06} z={-60} seed={1} />
+      <NebulaLayer color="#311B92" opacity={0.07} z={-70} seed={2} />
+    </group>
   );
 }
