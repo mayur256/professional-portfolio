@@ -1,6 +1,7 @@
 "use client";
 
 import { Canvas } from "@react-three/fiber";
+import Nebula from "./Nebula";
 import Starfield from "./Starfield";
 import Core from "./Core";
 import CameraController from "./CameraController";
@@ -16,6 +17,7 @@ export default function UniverseScene() {
       >
         <ambientLight intensity={0.2} />
         <directionalLight position={[5, 5, 5]} intensity={0.5} castShadow />
+        <Nebula />
         <Starfield />
         <Core />
         <CameraController />

@@ -1,14 +1,33 @@
 "use client";
 
+import { useEffect } from "react";
 import UniverseScene from "@/components/three/UniverseScene";
+import { useUniverseStore } from "@/store/universeStore";
 
 export default function Home() {
+  const { scrollProgress, setScrollProgress } = useUniverseStore();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollHeight =
+        document.documentElement.scrollHeight - window.innerHeight;
+      const progress = Math.min(window.scrollY / scrollHeight, 1);
+      setScrollProgress(progress);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [setScrollProgress]);
+
   return (
-    <main className="relative h-screen w-screen overflow-hidden">
+    <main className="relative w-screen overflow-x-hidden">
       <UniverseScene />
 
-      <div className="relative z-10 flex h-full items-center justify-center">
-        <div className="text-center backdrop-blur-sm">
+      <div className="relative z-10 flex h-screen items-center justify-center">
+        <div
+          className="text-center backdrop-blur-sm transition-opacity duration-700"
+          style={{ opacity: scrollProgress > 0.5 ? 0 : 1 }}
+        >
           <h1 className="mb-2 text-6xl font-bold text-white md:text-7xl">
             Mayur Upadhayay
           </h1>
@@ -29,6 +48,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <div className="h-screen" />
     </main>
   );
 }
